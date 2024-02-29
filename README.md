@@ -1,4 +1,8 @@
-**PROTO Website (2024)**
+### PROTO Website (2024)
 - HIVCD Interaction Design Group PROTO (Intagram: @hivcdproto)
 - In Department of Visual Communication Design, Hongik University
-- Designed & Developed by Yeom Juwon(HiJuwon)
+
+#### Credit
+- Website Design & Development | Yeom Juwon(HiJuwon)
+- 3D Graphic Design | Jeon Jiyeon
+- Assist | Choi Jiwon, Jeon Sieun, Jeong Yunseo
