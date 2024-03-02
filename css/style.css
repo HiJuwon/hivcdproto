@@ -1,0 +1,38 @@
+/*
+    1. 기본적인 스타일 정의는 여기서
+    - 상단바 디자인
+    - 버튼 디자인
+    - 섹션 타이틀 디자인
+    - CTA 버튼 디자인
+    - 맨 위로 가기 버튼 디자인
+
+    2. 페이지별 세부적인 스타일은 따로 개별 CSS 문서로 정리하여 연결
+    - 아카이브 리스트 페이지: 썸네일/제목/태그 스타일 디자인
+    - 아카이브 게시물 페이지: 큰 태그/본문/이미지섹션(aside) 디자인, 개별 피드 리스트 등
+*/
+
+:root {
+    --proto-blue: #170fff;
+    --proto-green: #00cf71;
+    --proto-silver: #eaebec;
+    --black: #26252E;
+    --white: #fff;
+}
+
+/* free font Neue Regrade */
+
+@font-face {
+    font-display: swap;
+    font-family: NeueRegrade SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Neue-Regrade/Neue-Regrade-Semibold.otf) format("opentype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NeueRegrade SemiBold-Italic;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Neue-Regrade/Neue-Regrade-SemiBold-Italic.otf) format("opentype")
+}
