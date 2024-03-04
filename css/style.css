@@ -1,0 +1,452 @@
+/*
+    1. 기본적인 스타일 정의는 여기서
+    - 상단바 디자인
+    - 버튼 디자인
+    - 섹션 타이틀 디자인
+    - CTA 버튼 디자인
+    - 맨 위로 가기 버튼 디자인
+
+    2. 페이지별 세부적인 스타일은 따로 개별 CSS 문서로 정리하여 연결
+    - 아카이브 리스트 페이지: 썸네일/제목/태그 스타일 디자인
+    - 아카이브 게시물 페이지: 큰 태그/본문/이미지섹션(aside) 디자인, 개별 피드 리스트 등
+*/
+
+:root {
+    --proto-blue: #170fff;
+    --proto-green: #00cf71;
+    --proto-silver: #eaebec;
+    --black: #26252E;
+
+    --basic-grey: #F5F7FA;
+    --mid-grey: #C4C8CF;
+    --dark-grey: #6A717D;
+    --light-black: #464D58;
+
+    --skyblue: #A8D4FF;
+}
+
+
+/* ============ 상단 헤더 스타일링 ============ */
+
+header {
+    width: 100vw;
+    position: fixed;
+    padding: 0.625rem 0 0.625rem 0;
+
+    background: var(--basic-grey);
+
+    z-index: 10;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.website-logo {
+    width: 2.25rem;
+    height: auto;
+
+    padding-top: 0.6rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.category-group {
+    padding-top: 0.9rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex: 1 0 41.6666667%;
+}
+
+.category {
+    min-width: 9rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    flex-shrink: 0;
+}
+
+.subcategory {
+    /* 초기 상태 ; mouse hover 전에는 하위 카테고리 안 보임 */
+    opacity: 0%;
+    height: 0;
+    overflow: hidden;
+    
+    margin: 0.5rem 0 0.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* mouse hover 시 ; 하위 카테고리 보임 */
+    transition: height ease-out 0.3s 0s;
+}
+
+.subcategory.show {
+    opacity: 100%;
+    height: 64.8px;
+}
+
+.subcategory li {
+    padding-bottom: 0.5rem;
+}
+
+.last-category {
+    margin-right: 7.25rem;
+}
+
+.menu {
+    color: var(--dark-grey);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.submenu {
+    color: var(--dark-grey);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.menu, .submenu {
+    transition: color ease-out 0.2s 0s;
+}
+
+.menu:hover, .submenu:hover {
+    color: var(--proto-blue);
+}
+
+.sns {
+    width: 5.1875rem;
+
+    padding-top: 0.8rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+#credit-popup {
+    height: 0;
+    opacity: 0;
+
+}
+
+#credit-popup.show {
+    position: fixed;
+    right: 3rem;
+    width: 19rem;
+    height: auto;
+
+    opacity: 1;
+
+    background: rgba(245, 247, 250);
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+
+    margin-top: 3rem;
+    padding: 0.8125rem 1.08719rem 1.31rem 1.08719rem;
+    border-radius: 1.25rem;
+    border: 1px solid var(--mid-grey);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    flex-shrink: 0;
+}
+
+#popup-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#popup-header svg {
+    cursor: pointer;
+}
+
+#popup-header h4 {
+    color: var(--dark-grey);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#credit-popup h6 {
+    color: var(--dark-grey);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-top: 0.5rem;
+}
+
+#credit-popup p {
+    color: var(--light-black);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* ============ 푸터 스타일링 ============ */
+
+footer {
+    width: 100%;
+
+    padding-bottom: 2.25rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer > p {
+    color: var(--mid-grey);
+    font-size: 0.75rem;
+    line-height: 140%; /* 0.875rem */
+}
+
+footer > img {
+    width: 16.67%;
+
+    margin-top: 0.25rem;
+}
+
+.footer-address {
+    width: 16.67%;
+
+    margin-top: 0.25rem;
+}
+
+
+footer nav {
+    width: 33.33%;
+    max-width: 33.33%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.last-footer-category {
+    margin: 0;
+}
+
+.footer-menu, .footer-submenu {
+    color: var(--mid-grey);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.footer-sns {
+    width: 8.33%;
+
+    margin-top: 0.25rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-sns img {
+    height: 1.875rem;
+    width: auto;
+}
+
+.footer-sns > a:nth-child(1) > img {
+    margin-right: 1rem;
+}
+
+
+
+
+/* ============ 섹션별 헤더 스타일링 ============ */
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header h4 {
+    color: var(--black);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100%; /* 3rem */
+
+    margin: 0 0.94rem 0 0.94rem;
+}
+
+/* ============ cta 버튼 스타일링 ============ */
+
+.btn-wrapper {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.cta-btn {
+    width: fit-content;
+    height: fit-content;
+
+    border-radius: 10rem;
+    padding: 1.125rem 5rem 1.125rem 5rem;
+
+    background: var(--proto-blue);
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    transition: background-color ease-out 0.3s 0s;
+}
+
+.cta-btn:hover {
+    background-color: var(--black);
+}
+
+.cta-btn button {
+    color: var(--proto-silver);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    transition: color ease-out 0.3s 0s;
+}
+
+.cta-btn:hover button {
+    color: var(--proto-green);
+}
+
+
+/* ============ 기타 ============ */
+
+.bold {
+    font-weight: 700;
+}
+
+#mobile-block-wrapper {
+    display: none;
+}
+
+/* ============ 활동 아카이브 예고 문구 섹션 스타일링 ============ */
+
+.notice {
+    color: var(--proto-silver);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.full-page {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.full-page main {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-page footer {
+    flex-shrink: 0;
+}
+
+
+/* ======================== */
+
+@media (max-width: 992px) {
+    body {
+        background-color: #06042D;
+    }
+
+    header, main, .notice, footer {
+        display: none;
+    }
+
+    #mobile-block-wrapper {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobile-block-info {
+        color: #fff;
+        text-align: center;
+
+        width: 100%;
+    }
+
+    #mobile-block-info p {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    #mobile-block-info h1 {
+        font-size: 1.75rem;
+        font-weight: 800;
+    }
+}
+
+/* free font Neue Regrade */
+
+@font-face {
+    font-display: swap;
+    font-family: NeueRegrade SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Neue-Regrade/Neue-Regrade-Semibold.otf) format("opentype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NeueRegrade SemiBold-Italic;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Neue-Regrade/Neue-Regrade-SemiBold-Italic.otf) format("opentype")
+}

@@ -1,0 +1,530 @@
+/* about 페이지에만 적용할 CSS */
+
+/* =========== section-1 =========== */
+
+#section-1 {
+    padding: 10.5rem 0 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-1 > h6 {
+    color: var(--mid-grey);
+    font-family: "SUIT Variable";
+    font-size: 1.875rem;
+    font-weight: 600;
+    letter-spacing: 0.0375rem;
+
+    margin-bottom: 3.81rem;
+}
+
+.logo-wrapper {
+    width: 66.67%;
+}
+
+.logo-bar {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-bar img {
+    height: 8.41756rem;
+    width: auto;
+}
+
+#logo-motion-wrapper {
+    position: relative;
+}
+
+#logo-motion-wrapper img {
+    position: absolute;
+    height: 8.41756rem;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.last-logo-bar {
+    margin-top: 8.41756rem;
+}
+
+/* =========== section-2 =========== */
+
+#section-2 {
+    padding: 5rem 0 6.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduce-card-wrapper {
+    width: 66.67%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.introduce-card {
+    position: relative;
+    width: 62.5%;
+
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+
+    background-color: var(--basic-grey);
+}
+
+.introduce-card:nth-child(1) {
+    margin-bottom: 2.25rem;
+}
+
+.introduce-card:nth-child(2) {
+    margin-left: auto;
+}
+
+.introduce-card > h6 {
+    color: var(--light-black);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 140%; /* 2.1rem */
+
+    margin: 0 0 1rem 0;
+}
+
+.introduce-card > p {
+    color: var(--dark-grey);
+    line-height: 160%; /* 1.2rem */
+}
+
+/* =========== section-3 =========== */
+
+#section-3 {
+    padding: 6.5rem 0 5.37rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#section-3-contents {
+    width: 100%;
+    
+    display: flex;
+}
+
+#core-value-header {
+    margin-bottom: 3.25rem;
+}
+
+#core-value-header h4 {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100%; /* 3rem */
+}
+
+.contents {
+    width: 100%;
+
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.contents:nth-child(1) p {
+    width: 17.5rem; 
+    color: var(--light-black);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.keyword-card {
+    width: 100%;
+    
+    border-radius: 1.25rem;
+    padding: 0 3rem 3rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
+    animation: moveUpDown 3s ease infinite;
+}
+
+.keyword-card > img {
+    width: 100%;
+    height: auto;
+
+    margin-top: 2.5rem;
+}
+
+.last-card {
+    margin-right: 0;
+}
+
+#PROactive {
+    background-color: #D1CFFF;
+    margin-top: 2.81rem;
+}
+
+#PROgressive {
+    background-color: #CAFCD1;
+    margin-top: 9.62rem;
+
+    animation-delay: 0.4s;
+}
+
+#PROfessional {
+    background-color: #F5F7FA;
+    margin-top: 2.81rem;
+
+    animation-delay: 0.2s;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+.card-title {
+    color: var(--black);
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; /* 추가 */
+}
+
+.slogan-title {
+    width: fit-content;
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0 1.69rem 0 1.69rem;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.slogan-title h6 {
+    font-size: 1.375rem;
+    font-weight: 800;
+
+    padding-bottom: 0.5rem;
+}
+
+/* =========== section-4 =========== */
+
+#section-4 {
+    padding: 11.31rem 0 11.88rem 0;
+
+    background: linear-gradient(180deg, rgba(245, 247, 250, 0.00) 0%, #F7F8F9 8%, #F5F7FA 92.5%, rgba(245, 247, 250, 0.00) 100%);
+}
+
+#section-4 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculum-question {
+    color: var(--dark-grey);
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 120%; /* 2.25rem */
+
+    margin: 7rem 0 2.69rem 0;
+}
+
+.curriculum-diagram {
+    width: 83.33%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.curriculum-diagram > p {
+    color: var(--mid-grey);
+    font-size: 1rem;
+
+    margin-bottom: 0.38rem;
+}
+
+.curriculum-diagram > img {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 0.69rem;
+}
+
+.sessions {
+    width: 100%;
+
+    margin-bottom: 2.5rem;
+
+    background-color: var(--proto-silver);
+
+    display: flex;
+}
+
+.sessions div {
+    color: var(--black);
+    font-weight: 600;
+    line-height: 160%;
+
+    border-radius: 0.625rem;
+    border: 1px dashed var(--black, #26252E);
+    padding: 1rem 0 1rem 0;
+    margin-right: 1rem;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessions div:last-child {
+    margin-right: 0;
+}
+
+.sessions div:nth-child(1),
+.sessions div:nth-child(3) {
+    width: calc((100% - 3rem) / 4); /* 전체 너비에서 간격의 총합(4rem)을 빼고 4로 나눈 값 */
+}
+
+.sessions div:nth-child(2),
+.sessions div:nth-child(4) {
+    width: calc(((100% - 3rem) / 4) * 2); /* 전체 너비에서 간격의 총합(4rem)을 빼고 4로 나눈 값에 2를 곱함 */
+}
+
+.curriculum-answer {
+    color: var(--light-black);
+    text-align: center;
+
+    margin-bottom: 4.53rem;
+}
+
+.session-construction {
+    width: 83.33%;
+
+    border-radius: 1.25rem;
+    border: 1px solid var(--mid-grey);
+    padding: 3rem;
+    margin: 3.24rem 0 2rem 0;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.session-construction > h4 {
+    color: var(--dark-grey);
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 110%; /* 2.475rem */
+
+    margin-bottom: 3rem;
+}
+
+.session-card-wrapper {
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.session-card {
+    width: 100%;
+
+    border-radius: 1.25rem;
+    padding: 1rem 1rem 0 1rem;
+    margin-right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.session-card:last-child {
+    margin-right: 0;
+}
+
+.session-card h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    margin-bottom: 1.56rem;
+}
+
+.session-card div {
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 170%;
+
+    border-radius: 10rem;
+    padding: 0.44rem 0 0.44rem 0;
+    margin-bottom: 0.7rem;
+
+    text-align: center;
+}
+
+.session-card div:last-child {
+    margin-bottom: 1rem;
+}
+
+.blue-card {
+    background-color: #D1CFFF;
+}
+
+.blue-card h6 {
+    color: var(--proto-blue);
+}
+
+.blue-card div {
+    color: var(--proto-silver);
+    border: 1px dashed var(--proto-silver);
+
+    background-color: var(--proto-blue);
+}
+
+.green-card {
+    background-color: #CAFCD1;
+}
+
+.green-card h6 {
+    color: var(--proto-green);
+}
+
+.green-card div {
+    color: var(--black);
+    border: 1px dashed var(--black);
+
+    background-color: var(--proto-green);
+}
+
+.silver-card {
+    background-color: var(--basic-grey);
+}
+
+.silver-card h6 {
+    color: var(--light-black);
+}
+
+.silver-card div {
+    color: #fff;
+    border: 1px dashed var(--proto-silver);
+    background-color: #6A707D;
+}
+
+.session-construction > p {
+    color: var(--light-black);
+    text-align: center;
+}
+
+.comment {
+    color: var(--dark-grey);
+    text-align: center;
+    font-weight: 400;
+
+    margin-top: 0.87rem;
+}
+
+/* =========== section-5 =========== */
+
+#section-5 {
+    padding: 8.37rem 0 5rem 0;
+}
+
+.history-group {
+    margin-top: 6.88rem;
+}
+
+.history-card {
+    border-top: 5px solid var(--proto-silver);
+    padding: 1.5rem;
+    margin-bottom: 4.56rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.history-card div {
+    margin-bottom: 1.12rem;
+}
+
+.history-card div:last-child {
+    margin-bottom: 0;
+}
+
+.history-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.history-title > div {
+    font-family: "Neue Regrade";
+    font-size: 6.25rem;
+    font-weight: 600;
+    line-height: 130%; /* 8.125rem */
+}
+
+.history-card-wrapper:nth-child(1) > .history-card > .history-title > div,
+.history-card-wrapper:nth-child(3) > .history-card > .history-title > div,
+.history-card-wrapper:nth-child(5) > .history-card > .history-title > div,
+.history-card-wrapper:nth-child(7) > .history-card > .history-title > div {
+    color: #38E284;
+}
+
+.history-card-wrapper:nth-child(2) > .history-card > .history-title > div,
+.history-card-wrapper:nth-child(4) > .history-card > .history-title > div,
+.history-card-wrapper:nth-child(6) > .history-card > .history-title > div,
+.history-card-wrapper:nth-child(8) > .history-card > .history-title > div {
+    color: #746FFF;
+}
+
+.history-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.history-list > svg {
+    margin-right: 0.5rem;
+}
+
+.history-list > p {
+    width: 100%;
+
+    color: var(--black);
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.history-list > p > span {
+    color: var(--dark-grey, #6A717D);
+}

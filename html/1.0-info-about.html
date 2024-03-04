@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTO | 프로토</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../fonts/Pretendard-1.3.9/pretendard.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/SUIT-Variable-woff2/SUIT-Variable.css" rel="stylesheet" type="text/css">
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/about.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../img&video/favicon.svg">
+
+    <meta name="description" content="To be pro, We are PROTO." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hivcdproto.com/" />
+    <meta property="og:title" content="PROTO | 프로토" />
+    <meta property="og:description" content="To be pro, We are PROTO." />
+    <meta property="og:site_name" content="PROTO | 프로토" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <meta property="og:image" content="https://drive.google.com/uc?id=1vPTKZDYmzMIihIkMreilq-Ml8Gqlduxb" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="PROTO 공식 웹사이트 이미지"/>
+
+    <meta name="twitter:card" content="summary"> 
+    <meta name="twitter:title" content="PROTO | 프로토">
+    <meta name="twitter:site" content="https://hivcdproto.com/">
+    <meta name="twitter:description" content="To be pro, We are PROTO."> 
+    <meta name="twitter:image" content="https://drive.google.com/uc?id=1vPTKZDYmzMIihIkMreilq-Ml8Gqlduxb">
+    <meta property="twitter:image:alt" content="PROTO 공식 웹사이트 이미지">
+</head>
+<body>
+    <header>
+        <div class = "container nav-wrapper">
+            <a href = "../index.html" class = "website-logo">
+                <img src = "../img&video/logo.svg">
+            </a>
+            <nav>
+                <div class = "category-group">
+                    <div class = "category">
+                        <a href = "../html/1.0-info-about.html" class = "menu">Information</a>
+                        <ul class = "subcategory">
+                            <li>
+                                <a href = "../html/1.0-info-about.html" class = "submenu">About</a>
+                            </li>
+                            <li>
+                                <a href = "../html/1.1-info-identity-guideline.html" class = "submenu">Identity Guideline</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "category">
+                        <a href = "../html/2.0-activity-project-list.html" class = "menu">Activities</a>
+                        <ul class = "subcategory">
+                            <li>
+                                <a href = "../html/2.0-activity-project-list.html" class = "submenu">Project</a>
+                            </li>
+                            <li>
+                                <a href = "../html/2.1-activity-workshop-list.html" class = "submenu">Workshop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href = "../html/3.0-exhibition-list.html" class = "category menu">
+                        Exhibition
+                    </a>
+                    <button class = "last-category menu">
+                        Credit
+                    </button>
+                </div>
+    
+                <div class = "sns">
+                    <a href = "https://www.instagram.com/hivcdproto/">
+                        <img src = "../img&video/instagram.svg">
+                    </a>
+                    <a href = "mailto:hivcdproto24@gmail.com">
+                        <img src = "../img&video/email.svg">
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 크레딧 팝업창 ; header에 포함, 어느 페이지든 누르면 보이도록 -->
+        <div id = "credit-popup">
+            <div id = "popup-header">
+                <h4>Credit</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M1.6875 12.6567L13.0012 1.34303" stroke="#6A717D" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M1.6875 1.34326L13.0012 12.657" stroke="#6A717D" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h6>제작</h6>
+            <p><span class = "bold">웹사이트 디자인·개발</span> 염주원</p>
+            <p><span class = "bold">3D 그래픽 디자인</span> 전지연</p>
+
+            <h6>도움</h6>
+            <p><span class = "bold">기획 도움</span> 최지원 전시은</p>
+            <p><span class = "bold">UI 디자인 도움</span> 정윤서</p>
+        </div>
+    </header>
+    <script type="text/javascript" src = "../js/menu.js"></script>
+
+    <main>
+        <section class = "container" id = "section-1">
+            <h6>
+                We are HIVCD Interaction Design Group PROTO.
+            </h6>
+
+            <div class = "logo-wrapper">
+                <div class = "logo-bar">
+                    <img src = "../img&video/1-1.about/sequence-top.svg">
+                </div>
+                <div class = "logo-bar" id = "logo-motion-wrapper">
+                    <img src = "../img&video/1-1.about/sequence1.svg" class = "logo-sequence-image">
+                    <img src = "../img&video/1-1.about/sequence2.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence3.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence4.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence5.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence6.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence7.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence8.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence9.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence10.svg" class = "logo-sequence-image invisible">
+                    <img src = "../img&video/1-1.about/sequence11.svg" class = "logo-sequence-image invisible">
+                </div>
+                <script type="text/javascript" src = "../js/logo-motion.js"></script>
+
+                <div class = "logo-bar last-logo-bar">
+                    <img src = "../img&video/1-1.about/sequence-bottom.svg">
+                </div>
+            </div>
+        </section>
+
+        <section class = "container" id = "section-2">
+            <div class = "introduce-card-wrapper">
+                <div class = "introduce-card">
+                    <h6>
+                        PROTO는 
+                        <span style = "font-weight: 800; color: var(--proto-blue);">
+                            인터랙션 디자인
+                        </span>
+                        을 공부하는 홍익대학교 시각디자인과 공식 학술 소모임입니다.
+                    </h6>
+                    <p>
+                        코딩과 인터랙션에 흥미를 가지는 시각디자인과 학우들이 모여 2017년에 창설한 이래로, 스터디와 워크숍을 통해 인터랙션 분야를 연구하고, 전시 주최, 학회 참여 등으로 다양한 활동을 해오고 있습니다.
+                    </p>
+                </div>
+                <div class = "introduce-card">
+                    <h6>
+                        PROTO는 
+                        <span style = "font-weight: 800; color: var(--proto-green);">
+                            기술과 디자인 모두에 대한 이해도를 높이는 것
+                        </span>
+                        을 궁극적인 목표로 합니다.
+                    </h6>
+                    <p>
+                        일상적으로 접하는 수많은 매체들과의 상호작용을 다양한 디자인 분야와 접목시키고, 나아가 유저와 관객에게 더 나은 경험을 제공하는 방법을 고민합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class = "container" id = "section-3">
+            <div id = "core-value-header">
+                <h4>Core Value</h4>
+            </div>
+
+            <div id = "section-3-contents">
+                <div class = "contents">
+                    <p>
+                        2019년부터 사용해온 슬로건으로, PROTO의 핵심 가치를 나타냅니다.
+                        <br><br>공통의 목표 의식을 행동으로 연결해나갈 수 있도록 노력하는 사람들의 모임이 되고자 합니다.
+                    </p>
+                </div>
+    
+                <div class = "contents">
+                    <div class = "keyword-card" id = "PROactive">
+                        <div class = "card-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 15L15 0L-9.53674e-07 -6.55671e-07C8.28427 -2.93554e-07 15 6.71573 15 15Z" fill="white"/>
+                            </svg>
+                            <div class = "slogan-title">
+                                <h6>PROactive</h6>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H0V15C0 6.71573 6.71573 0 15 0Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <img src = "../img&video/1-1.about/proactive.svg">
+                    </div>
+                </div>
+    
+                <div class = "contents">
+                    <div class = "keyword-card" id = "PROgressive">
+                        <div class = "card-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 15L15 0L-9.53674e-07 -6.55671e-07C8.28427 -2.93554e-07 15 6.71573 15 15Z" fill="white"/>
+                            </svg>
+                            <div class = "slogan-title">
+                                <h6>PROgressive</h6>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H0V15C0 6.71573 6.71573 0 15 0Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <img src = "../img&video/1-1.about/progressive.svg">
+                    </div>
+                </div>
+    
+                <div class = "contents">
+                    <div class = "keyword-card last-card" id = "PROfessional">
+                        <div class = "card-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 15L15 0L-9.53674e-07 -6.55671e-07C8.28427 -2.93554e-07 15 6.71573 15 15Z" fill="white"/>
+                            </svg>
+                            <div class = "slogan-title">
+                                <h6>PROfessional</h6>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H0V15C0 6.71573 6.71573 0 15 0Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <img src = "../img&video/1-1.about/professional.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "section-4">
+            <div class = "container">
+                <div class = "section-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 47 50" fill="none">
+                        <path d="M18.9104 32.3039L46.75 20.7148V0C46.75 0 37.0339 4.16378 21.3304 11.5024C8.96124 17.2797 0.5 21.6169 0.5 21.6169V50H46.75V31.9049L18.9104 32.2866V32.3039Z" fill="#eaebec"/>
+                    </svg>
+                    <h4>Curriculum</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 47 50" fill="none">
+                        <path d="M28.5896 17.6961L0.75 29.2852V50C0.75 50 10.4661 45.8362 26.1696 38.4976C38.5388 32.7203 47 28.3831 47 28.3831V0H0.75V18.0951L28.5896 17.7134V17.6961Z" fill="#EAEBEC"/>
+                    </svg>
+                </div>
+    
+                <h6 class = "curriculum-question">
+                    프로토는 한 해 동안 어떻게 활동하나요?
+                </h6>
+                <div class = "curriculum-diagram">
+                    <p>PROTO's year</p>
+                    <img src = "../img&video/1-1.about/year.svg">
+                    <div class = "sessions">
+                        <div>겨울 세션</div>
+                        <div>봄 세션</div>
+                        <div>여름 세션</div>
+                        <div>가을 세션</div>
+                    </div>
+                </div>
+                <p class = "curriculum-answer">
+                    프로토는 1년을 겨울방학, 1학기, 여름방학, 2학기 단위로 나누어 총 연간 4회의 세션을 진행합니다.
+                    <br>겨울 세션, 봄 세션, 여름 세션, 가을 세션으로 한 해 활동을 꾸립니다.
+                </p>
+    
+                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="41" viewBox="0 0 47 41" fill="none">
+                    <path d="M44 3.48369L23.5 20.3042L3 3.48369" stroke="#C4C8CF" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M44 20.3045L23.5 37.125L3 20.3045" stroke="#C4C8CF" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+    
+                <div class = "session-construction">
+                    <h4>세션별 활동 구성</h4>
+                    <div class = "session-card-wrapper">
+                        <div class = "session-card blue-card">
+                            <h6>정규 세션</h6>
+                            <div>인터랙션 분야별 세션</div>
+                            <div>전시 참가자별 피드백</div>
+                        </div>
+                        <div class = "session-card green-card">
+                            <h6>세부 세션</h6>
+                            <div>분야별 스터디·심화 세션</div>
+                            <div>전시 아트디렉팅 회의</div>
+                            <div>내부 프로젝트 사업 회의</div>
+                        </div>
+                        <div class = "session-card silver-card">
+                            <h6>기타</h6>
+                            <div>특별 워크숍·세미나</div>
+                            <div>MT 등 각종 행사</div>
+                        </div>
+                    </div>
+    
+                    <p>
+                        세션별로 매주 1회 정기회의를 필수적으로 진행하며,
+                        <br>필요에 따라 세부 세션 및 기타 행사들이 함께 진행됩니다.
+                    </p>
+                    <p class = "comment">
+                        * 정확한 구성은 매년 커리큘럼에 따라 상이함
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class = "container" id = "section-5">
+            <div class = "section-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 47 50" fill="none">
+                    <path d="M18.9104 32.3039L46.75 20.7148V0C46.75 0 37.0339 4.16378 21.3304 11.5024C8.96124 17.2797 0.5 21.6169 0.5 21.6169V50H46.75V31.9049L18.9104 32.2866V32.3039Z" fill="#eaebec"/>
+                </svg>
+                <h4>History</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 47 50" fill="none">
+                    <path d="M28.5896 17.6961L0.75 29.2852V50C0.75 50 10.4661 45.8362 26.1696 38.4976C38.5388 32.7203 47 28.3831 47 28.3831V0H0.75V18.0951L28.5896 17.7134V17.6961Z" fill="#EAEBEC"/>
+                </svg>
+            </div>
+
+            <div class = "row history-group">
+                <!-- 17년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#38E284"/>
+                            </svg>
+                            <div>17</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2017.03</span> 프로토 창립
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2017.04</span> 프레이머, 웹 프로그래밍 세미나
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2017.04</span> 웹 퍼블리싱 워크숍
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2017.08</span> 하이퍼링크 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2017.11</span> 졸업주간 - 프로토 뉴미디어 워크숍 01. THE BASIC OF MEDIA ART WITH ARDUINO
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#746FFF"/>
+                            </svg>
+                            <div>18</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2018.02</span> HCI KOREA 2018 참가
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2018.03</span> 제9회 퓨휴전 참가
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2018.08</span> 프로토 뉴미디어 워크숍 02. Basic of VR with A-FRAME
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2018.09</span> 프로통 Vol.1 발간
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2018.10</span> 리듬, 멜로디, 하모니 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2018.12</span> 졸업주간 - 프로토 뉴미디어 워크숍 03. 1시간 만에 VR 만들기
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 19년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#38E284"/>
+                            </svg>
+                            <div>19</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.02</span> HCI KOREA 2019 참가
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.03</span> 제10회 퓨휴전 참가
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.04</span> UNITY SEMINAR (with 스튜디오 소트)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.07</span> 2019 오픈세미나 - 오주영 선배와의 만남 (with 오주영)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.09</span> 2019 네이버 디자인 캠프 세미나 (with 엄태욱)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.10</span> 의식의 흐름 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.10</span> 프로통 Vol.2 발간
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.10</span> 프로토 뉴미디어 워크숍 04. BASIC OF MEDIA ART WITH ARDUINO
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.11</span> 프로토 뉴미디어 워크숍 05. 간단한 웹코딩으로 AR 제작하기
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.11</span> 프로토 뉴미디어 워크숍 06. Basic of Visual Programming with TouchDesigner
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.11</span> 프로토 뉴미디어 워크숍 07. 내가 만든 모델링으로 VR 제작하기
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2019.12</span> 졸업주간 - 프로토 뉴미디어 워크숍 08. 간단한 웹코딩으로 AR 제작하기
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 20년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#746FFF"/>
+                            </svg>
+                            <div>20</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2020.04</span> 프로토 리브랜딩 사업 (1차)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2020.08</span> HCI KOREA 2020 참가
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2020.10</span> SISO 2020 - 학교가 된 집, 집이 된 학교 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2020.10</span> SISO 2020 - 프로토 뉴미디어 워크숍 09. Making Zoom Filter with Realtime Visual Programming
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2020.10</span> SISO 2020 - 연사초청 선배와의 대화 (with 엄태욱)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 21년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#38E284"/>
+                            </svg>
+                            <div>21</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.03</span> SISO 2021 - PROTOFILE 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.09</span> 프로토 가을학교 G914 그래픽과 친해지길 바라
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.09</span> 프로토 가을학교 V918 어떻게든 이어지기
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.09</span> 프로토 가을학교 T928 글자가 담을 수 있는 인상이란?
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.10</span> cascadingComma 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.12</span> 선배와의 대화 : 미디어아티스트가 걷는 길 (with 오주영)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2021.12</span> 프로통 Vol.3 발간
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 22년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#746FFF"/>
+                            </svg>
+                            <div>22</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2022.03</span> 프로토 리브랜딩 사업 (2차)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2022.03</span> SISO 2022 - 1/6(one sixth) 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2022.03</span> SISO 2022 - 연사초청 강연 (with 이석)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2022.05</span> 3D WORKSHOP for BEGINNER (with 박세희)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2022.05</span> a big CHEESE 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2022.11</span> An Orange Dagger 展
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 23년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#38E284"/>
+                            </svg>
+                            <div>23</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.03</span> SISO 2023 - PROTO [{( formula )}] 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.03</span> SISO 2023 - 연사초청 강연 (with 디스트릭트)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.05</span> Parts Parts 스몰톡 (with 정효)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.07</span> ZUZU 코드박스 후원 사업 선정
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.08</span> 이상공간 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.10</span> (PRO)TOUR #01. Design-Coding Workshop (with 이지훈)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.11</span> (PRO)TOUR #02. Media Art Small Talk (with 양숙현)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.11</span> tiki-taka 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.11</span> (PRO)TOUR #03. Spline으로 코딩 없이 만들어보는 Web 3D Typography (with 정효)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2023.11</span> (PRO)TOUR #04. Body-based Learning, Using AI (with ABC LAB)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 24년도 -->
+                <div class = "col-lg-3 col-md-4 history-card-wrapper">
+                    <div class = "history-card">
+                        <!-- 연도 -->
+                        <div class = "history-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path d="M12.8 6.3C12.8 9.7 9.8 12.5 6.6 12.5C3 12.5 0 9.7 0 6.3C0 2.8 3 0 6.6 0C9.8 0 12.8 2.8 12.8 6.3ZM8.4 12.2L6.6 0C18.5 0.400001 17.3 22.2 2.2 23.7V20C6.7 19 9 15.4 8.4 12.2Z" fill="#746FFF"/>
+                            </svg>
+                            <div>24</div>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2024.03</span> SISO 2024 - Möbius 展
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2024.03</span> SISO 2024 - 연사초청 강연 (with 새로운 질서 그 후)
+                            </p>
+                        </div>
+    
+                        <div class = "history-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="24" height="24" rx="12" fill="#C4C8CF"/>
+                                <path d="M7 11.8205L11.3243 15.6667L17 9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p>
+                                <span class = "date">2024.03</span> 프로토 웹사이트 오픈
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class = "container">
+        <img src = "../img&video/footer-lockup.svg">
+
+        <p class = "footer-address">
+            04066 서울특별시 마포구 와우산로94 홍익대학교 홍문관 7층 미술대학 시각디자인과
+            <br>© 2017-2024 PROTO ALL RIGHTS RESERVED.
+        </p>
+
+        <nav class = "footer-category-group">
+            <div class = "footer-category">
+                <a href = "../html/1.0-info-about.html" class = "footer-menu">Information</a>
+                <ul class = "footer-subcategory">
+                    <li>
+                        <a href = "../html/1.0-info-about.html" class = "footer-submenu">About</a>
+                    </li>
+                    <li>
+                        <a href = "../html/1.1-info-identity-guideline.html" class = "footer-submenu">Identity Guideline</a>
+                    </li>
+                </ul>
+            </div>
+            <div class = "footer-category">
+                <a href = "../html/2.0-activity-project-list.html" class = "footer-menu">Activities</a>
+                <ul class = "footer-subcategory">
+                    <li>
+                        <a href = "../html/2.0-activity-project-list.html" class = "footer-submenu">Project</a>
+                    </li>
+                    <li>
+                        <a href = "../html/2.1-activity-workshop-list.html" class = "footer-submenu">Workshop</a>
+                    </li>
+                </ul>
+            </div>
+            <a href = "../html/3.0-exhibition-list.html" class = "footer-category footer-menu" style = "padding-top: 0.25rem;">
+                Exhibition
+            </a>
+            <button class = "last-footer-category footer-menu" style = "padding-top: 0.25rem;">
+                Credit
+            </button>
+        </nav>
+
+        <div class = "footer-sns">
+            <a href = "https://www.instagram.com/hivcdproto/">
+                <img src = "../img&video/instagram-light.svg">
+            </a>
+            <a href = "mailto:hivcdproto24@gmail.com">
+                <img src = "../img&video/email-light.svg">
+            </a>
+        </div>
+    </footer>
+
+    <!-- 모바일 화면 차단 -->
+    <div id = "mobile-block-wrapper" class = "container">
+        <div id = "mobile-block-info">
+            <h1>Website BETA Ver.</h1>
+            <br>
+            <p>
+                현재 시소전에서 프로토 웹사이트를 보실 수 있습니다. 모바일 버전을 포함한 정식 웹사이트는 시소전 종료 후에 공개됩니다.
+            </p>
+            <br>
+            <p>
+                2024 SISO
+                <br>03.05(Tue) - 03.09(Sat)
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
